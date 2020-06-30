@@ -216,6 +216,9 @@ class ProdutoController extends Controller {
 
     public function deletar($id) {
         $produtos = new Produtos();
+        $produtos->getOne($id);
+        //Deletar a imagem do produto que está no servidor;
+        unlink("assets/images/produtos/".$produtos->info['img']);
         $produtos->deletar($id);
         header("Location: ".BASE_URL."produto/listar");
     }

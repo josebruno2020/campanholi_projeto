@@ -47,6 +47,7 @@
                     </div>
                     <div id="dropdown">
                         <a href="<?=BASE_URL;?>compra/">Cadastrar Compra</a>
+                        <a href="<?=BASE_URL;?>historico/">Histórico de Caixa</a>
                     </div>
                 </li>
                 <li>

@@ -92,3 +92,9 @@ ul li:hover {
     color:#fff;
 }
 
+.total_caixa{
+    background-color: darkgrey;
+    font-weight: bold;
+    font-size:20px;
+}
+
