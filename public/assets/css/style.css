@@ -1,0 +1,94 @@
+body {
+    background-color: antiquewhite;
+}
+.topo {
+    background-color: black;
+    height: 50px;
+}
+.ul-topo {
+    margin:0;
+    padding:0;
+}
+ul li,
+ul a {
+    list-style: none;
+    padding:0px 10px;
+    float: left;
+    line-height: 50px;
+    color:#fff;
+}
+ul li:hover {
+    background-color: #363636;
+}
+.usuario {
+    color:#fff;
+    line-height: 50px;
+    float: right;
+    margin-right: 15;
+
+}
+.usuario a{
+    color:#fff;
+}
+.container-fluid {
+    padding-top:30px;
+}
+
+
+.form-group{
+    
+    padding-left: 10px;
+}
+.form input,
+.form select {
+    width: 350px;
+}
+.form textarea{
+    width: 100%;
+    max-width: 850px;
+}
+#menu-dropdown{
+    height: 50px;
+}
+#img-dropdown {
+    width: 15px;
+    padding-top: 18px;
+    color: #fff;
+}
+#dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    float: none;
+    width: 200px;
+    height: auto;
+    background-color: #000;
+}
+#adicionar-produto {
+    width: 25px;
+    cursor:pointer;
+}
+
+.venda-produto {
+    width: 350px;
+    height: auto;
+    z-index: 1;
+    background-color:#ccc;
+    position: absolute;
+    display:none;
+    cursor: pointer;
+}
+.item-produto:hover{
+    background-color:#ddd;
+}
+
+.table td{
+    height: 20px;
+}
+.pagination a{
+    color: #000;
+}
+.pagination a:hover {
+    color:#fff;
+}
+

@@ -1,0 +1,75 @@
+-> Página de Login
+    LoginController
+
+-> Página Incial
+    HomeController
+
+-> Cadastrar Produto
+    ProdutoController
+
+-> Listar Produtos (por categoria)
+    ProdutoController
+
+-> Cadastrar venda
+    VendaController
+
+-> Cadastrar Compra
+    CompraController
+
+-> Listar Historico (ainda por fazer);
+    HistoricoController
+
+-> Cadastrar Usuario
+    UsuarioController
+
+-> Listar Usuario
+    UsuarioController
+
+->Requisições AJAX
+    AjaxController
+
+
+
+DATABASE ----------------
+
+-> Usuarios
+    Id
+    Nome
+    E-mail
+    Senha
+    Telefone
+    Grupo
+
+-> Produtos
+    Id
+    Nome
+    Codigo
+    categoria
+    unidades ---- 5
+    unidade_kg ---- 10
+    kg = unidade_kg * unidades;
+    Preco_compra
+    preco_venda
+    id_usuario
+    obs
+
+-> Categorias
+    Id
+    Nome
+    id_produto
+
+-> Historico
+    Id
+    Data
+    Total
+    Tipo
+
+->Pedidos
+    Id
+    id_produto
+    id_venda(historico)
+    qt
+    kg
+
+
+    
