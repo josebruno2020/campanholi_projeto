@@ -22,13 +22,13 @@
                     </td>
                     <td>
                         <?php if($historico['tipo'] == '0'): ?>
-                            Venda
+                            <span style="color:green;">Venda</span> 
                         <?php else:?>
-                            Compra
+                            <span style="color:red;">Compra</span> 
                         <?php endif;?>
                     </td>
                     <td>
-                        <?=number_format(str_replace('-', '', $historico['total']), 2, ',', ' ');?>
+                        <strong> <?=number_format(str_replace('-', '', $historico['total']), 2, ',', ' ');?></strong>
                     </td>
                     
                 </tr>
