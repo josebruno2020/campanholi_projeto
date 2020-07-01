@@ -116,7 +116,8 @@ class ProdutoController extends Controller {
             'flash' => $flash,
             'usuario' => $usuario,
             'total_produtos' => $total_produtos,
-            'total_paginas' => $total_paginas
+            'total_paginas' => $total_paginas,
+            'p' => $p
         ]);
     }
 
@@ -149,7 +150,8 @@ class ProdutoController extends Controller {
                 'id_categoria' => $id_categoria,
                 'usuario' => $usuario,
                 'total_produtos' => $total_produtos,
-                'total_paginas' => $total_paginas
+                'total_paginas' => $total_paginas,
+                'p' => $p
             ]);
         }
         
@@ -210,7 +212,8 @@ class ProdutoController extends Controller {
             'categorias' => $categorias,
             'produtos' => $produtos,
             'usuario' => $usuario,
-            'total_paginas' => $total_paginas
+            'total_paginas' => $total_paginas,
+            'p' => $p
         ]);
     }
 

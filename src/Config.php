@@ -10,7 +10,7 @@ if(ENVIRONMENT == 'development') {
     $config['dbuser'] = 'root';
     $config['dbpass'] = '';
 } else {
-    define("BASE_URL", "http://a739b7055129.ngrok.io/campanholi_projeto/public/");
+    define("BASE_URL", "http://6dd8bac4cbae.ngrok.io/campanholi_projeto/public/");
     $config['dbname'] = 'campanholi_projeto';
     $config['host'] = 'localhost';
     $config['dbuser'] = 'root';

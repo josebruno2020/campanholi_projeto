@@ -88,6 +88,9 @@ ul li:hover {
 .pagination a{
     color: #000;
 }
+li.active{
+    background-color: #363636;
+}
 .pagination a:hover {
     color:#fff;
 }

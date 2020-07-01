@@ -45,7 +45,7 @@
         </table>
         <ul class="pagination">
             <?php for($q=1;$q<=$total_paginas;$q++): ?>
-            <li class="<?php echo ($p==$q)?'active':''; ?>"><a href="<?=BASE_URL;?>?<?php
+            <li class="<?=($p==$q)?'active':''; ?>"><a href="<?=BASE_URL;?>?<?php
             $w = $_GET;
             $w['p'] = $q;
             echo http_build_query($w);

@@ -19,10 +19,10 @@
                         <div class="alert-danger"><?=$flash;?></div><br>
                     <?php endif;?>
                     <div class="form-group">
-                        <input type="email" name="email" id="" placeholder="Digite seu E-mail" autofocus="true">
+                        <input type="email" name="email" id="" placeholder="Digite seu E-mail" class="form-control" autofocus="true">
                     </div>
                     <div class="form-group">
-                        <input type="password" name="senha" id="" placeholder="****">
+                        <input type="password" name="senha" id="" placeholder="****" class="form-control">
                     </div><br>
                     <div class="form-group">
                         <input type="submit" value="Acessar Sistema" class="btn btn-success">

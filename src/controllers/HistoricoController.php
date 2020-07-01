@@ -40,7 +40,8 @@ class HistoricoController extends Controller {
             'usuario' => $usuario,
             'historicos' => $historicos,
             'total_paginas' =>$total_paginas,
-            'total_caixa' => $total_caixa
+            'total_caixa' => $total_caixa,
+            'p' => $p
         ]);
         
     }

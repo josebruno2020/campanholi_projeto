@@ -1,4 +1,4 @@
-//const BASE_URL = 'http://a739b7055129.ngrok.io/campanholi_projeto/public/';
+//const BASE_URL = 'http://6dd8bac4cbae.ngrok.io/campanholi_projeto/public/';
 const BASE_URL = 'http://localhost/campanholi_projeto/public/';
 $(document).ready(function(){
     
