@@ -36,11 +36,11 @@
             </div>
             <div class="form-group">
                 <label for="codigo">Preço de Compra:</label><br>
-                <input type="text" name="preco_compra" class="form-control" value="<?=$produto->info['preco_compra'];?>">
+                <input type="text" name="preco_compra" class="form-control" value="<?=str_replace('.', ',', $produto->info['preco_compra']);?>">
             </div>
             <div class="form-group">
                 <label for="codigo">Preço de Venda:</label><br>
-                <input type="text" name="preco_venda" class="form-control" value="<?=$produto->info['preco_venda'];?>">
+                <input type="text" name="preco_venda" class="form-control" value="<?=str_replace('.', ',', $produto->info['preco_venda'])   ;?>">
             </div>
             <div class="form-group">
                 <label for="codigo">OBS:</label><br>
