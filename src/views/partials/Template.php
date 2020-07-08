@@ -9,63 +9,70 @@
     <body>
         
         <div class="topo">
-            <ul class="ul-topo">
-                <li>
-                    <a href="<?=BASE_URL;?>">Home</a>
-                </li>
-                <li>
-                    <div id="menu-dropdown">
-                        <a href="<?=BASE_URL;?>produto/cadastrar">Cadastrar Produto</a>
-                        <img id="img-dropdown" src="<?=BASE_URL;?>assets/images/arrow-down.png" alt="">
-                    </div>
-                    
-                    <div id="dropdown">
-                        <a href="<?=BASE_URL;?>categoria/cadastrar">
-                            Cadastrar Categoria
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div id="menu-dropdown">
-                        <a href="<?=BASE_URL;?>produto/listar">Listar Produtos</a>
-                        <img id="img-dropdown" src="<?=BASE_URL;?>assets/images/arrow-down.png" alt="">
-                    </div>
-                    <div id="dropdown">
-                        <?php foreach($viewData['categorias']->info as $categoria):?>
-                        <a href="<?=BASE_URL;?>produto/listar_categoria/<?=$categoria['id'];?>"><?=$categoria['nome'];?></a><br>
-                        <?php endforeach;?>
-                        <a href="<?=BASE_URL;?>produto/minimo">
-                            Estoque Minimo
-                        </a>
+            <img src="<?=BASE_URL;?>assets/images/menu.png" alt="" id="img-menu">
+            <div class="menu">
+                <ul class="ul-topo" >
+                    <li>
+                        <a href="<?=BASE_URL;?>">Home</a>
+                    </li>
+                    <li>
+                        <div id="menu-dropdown">
+                            <a href="<?=BASE_URL;?>produto/cadastrar">Cadastrar Produto</a>
+                            <img id="img-dropdown" src="<?=BASE_URL;?>assets/images/arrow-down.png" alt="">
+                        </div>
                         
-                    </div>
-                </li>
-                <li>
-                    <div id="menu-dropdown">
-                        <a href="<?=BASE_URL;?>venda/">Cadastrar venda</a>
-                        <img id="img-dropdown" src="<?=BASE_URL;?>assets/images/arrow-down.png" alt="">
-                    </div>
-                    <div id="dropdown">
-                        <a href="<?=BASE_URL;?>compra/">Cadastrar Compra</a>
-                        <a href="<?=BASE_URL;?>historico/">Histórico de Caixa</a>
-                    </div>
-                </li>
-                <li>
-                    <div id="menu-dropdown">
-                        <a href="<?=BASE_URL;?>usuarios/">Usuários</a>
-                        <img id="img-dropdown" src="<?=BASE_URL;?>assets/images/arrow-down.png" alt="">
-                    </div>
-                    <div id="dropdown">
-                        <a href="<?=BASE_URL;?>usuarios/cadastrar">Cadastrar Usuário</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="<?=BASE_URL;?>sair">Sair</a>
-                </li>   
-            </ul>
-            <div class="usuario">
-                <a href="<?=BASE_URL;?>usuarios/listar/<?=$viewData['usuario']->info['id'];?>"><?=$viewData['usuario']->info['nome'];?></a>
+                        <div id="dropdown">
+                            <a href="<?=BASE_URL;?>categoria/cadastrar">
+                                Cadastrar Categoria
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="menu-dropdown">
+                            <a href="<?=BASE_URL;?>produto/listar">Listar Produtos</a>
+                            <img id="img-dropdown" src="<?=BASE_URL;?>assets/images/arrow-down.png" alt="">
+                        </div>
+                        <div id="dropdown">
+                            <?php foreach($viewData['categorias']->info as $categoria):?>
+                            <div class="dropdown-item"><a href="<?=BASE_URL;?>produto/listar_categoria/<?=$categoria['id'];?>"><?=$categoria['nome'];?></a></div><br>
+                            <?php endforeach;?>
+                            <a href="<?=BASE_URL;?>produto/minimo">
+                                Estoque Minimo
+                            </a>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div id="menu-dropdown">
+                            <a href="<?=BASE_URL;?>venda/">Cadastrar venda</a>
+                            <img id="img-dropdown" src="<?=BASE_URL;?>assets/images/arrow-down.png" alt="">
+                        </div>
+                        <div id="dropdown">
+                            <a href="<?=BASE_URL;?>compra/">Cadastrar Compra</a>
+                            <a href="<?=BASE_URL;?>historico/">Histórico de Caixa</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="menu-dropdown">
+                            <a href="<?=BASE_URL;?>usuarios/">Usuários</a>
+                            <img id="img-dropdown" src="<?=BASE_URL;?>assets/images/arrow-down.png" alt="">
+                        </div>
+                        <div id="dropdown">
+                            <a href="<?=BASE_URL;?>usuarios/cadastrar">Cadastrar Usuário</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="<?=BASE_URL;?>sair">Sair</a>
+                    </li>   
+                </ul>
+                <div class="usuario">
+                    <a href="<?=BASE_URL;?>usuarios/listar/<?=$viewData['usuario']->info['id'];?>"><?=$viewData['usuario']->info['nome'];?></a>
+                </div>
             </div>
+            
+            
+            
+            
         </div>
         <div class="container-fluid">
             <?=$this->render($viewName, $viewData);?>

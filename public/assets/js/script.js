@@ -1,6 +1,12 @@
 //const BASE_URL = 'http://6dd8bac4cbae.ngrok.io/campanholi_projeto/public/';
 const BASE_URL = 'http://localhost/campanholi_projeto/public/';
 $(document).ready(function(){
+
+    //Função para o menu ser acionado no modo mobile;
+    $('#img-menu').bind('click', function(){
+        $('.menu').slideToggle('fast');
+    });
+
     
 
     $('li').hover(function(){

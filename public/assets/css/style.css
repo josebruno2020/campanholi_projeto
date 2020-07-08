@@ -1,9 +1,19 @@
 body {
-    background-color: antiquewhite;
+    background-color: #DCDCDC;
+}
+.menu,
+.topo {
+    background-color: #000;
+    
 }
 .topo {
-    background-color: black;
     height: 50px;
+}
+.menu {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .ul-topo {
     margin:0;
@@ -15,20 +25,31 @@ ul a {
     padding:0px 10px;
     float: left;
     line-height: 50px;
-    color:#fff;
+    color:#FF4500;
+}
+ul a:hover{
+    color: #FF0000;
 }
 ul li:hover {
     background-color: #363636;
 }
+.dropdown-item:hover{
+    background-color: #363636;
+}
+#img-menu {
+    width: 35px;
+    padding-top:10px;
+    display:none;
+}
 .usuario {
-    color:#fff;
+    color:#FF4500;
     line-height: 50px;
     float: right;
     margin-right: 15;
 
 }
 .usuario a{
-    color:#fff;
+    color:#FF4500;
 }
 .container-fluid {
     padding-top:30px;
@@ -101,3 +122,12 @@ li.active{
     font-size:20px;
 }
 
+@media (max-width: 890px){
+    #img-menu {
+        display: block;
+    }
+    .menu{
+        display: none;
+        background-color: #000;
+    }
+}
