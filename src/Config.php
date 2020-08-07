@@ -4,17 +4,17 @@ require 'environment.php';
 $config = array();
 
 if(ENVIRONMENT == 'development') {
-    define("BASE_URL", "http://localhost/campanholi_projeto/public/");
+    define("BASE_URL", "http://localhost/campanholi_projeto/");
     $config['dbname'] = 'campanholi_projeto';
     $config['host'] = 'localhost';
     $config['dbuser'] = 'root';
     $config['dbpass'] = '';
 } else {
-    define("BASE_URL", "http://6dd8bac4cbae.ngrok.io/campanholi_projeto/public/");
-    $config['dbname'] = 'campanholi_projeto';
-    $config['host'] = 'localhost';
-    $config['dbuser'] = 'root';
-    $config['dbpass'] = '';
+    define("BASE_URL", "http://www.autoiluminacao.com.br/");
+    $config['dbname'] = 'autoil56_campanholi';
+    $config['host'] = '127.0.0.1';
+    $config['dbuser'] = 'autoil56_campanholi';
+    $config['dbpass'] = 'campanholi500';
 }
 
 global $db;

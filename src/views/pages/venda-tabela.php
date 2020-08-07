@@ -1,7 +1,7 @@
 <div class="form-group">
                 
     <label for="">Nome:</label>
-    <input type="text" name="produto[]" class="form-control form-check-inline produto-campo" autofocus="true">
+    <input type="text" name="produto" class="form-control form-check-inline produto-campo" autofocus="true">
     <div class="venda-produto">
         <?php if($produtos->info==null):?>
         

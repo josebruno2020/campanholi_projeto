@@ -1,6 +1,6 @@
 <div class="col-sm">
-    <form id="form-usuario" class="form-inline" method="get">
-        <input type="text" class="form-control" name="produto-filtro" id="produto-filtro" placeholder="Pesquise aqui..." width="350" autofocus="true">
+    <form method="post" id="form-usuario" class="form-inline">
+        <input type="text" id="produto-filtro"  class="form-control" name="produto-filtro" placeholder="Pesquise aqui..." width="350">
         <input type="submit" value="Buscar" class="btn btn-success">
     </form>
     <div id="filtro-resultado">

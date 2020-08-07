@@ -100,6 +100,8 @@ class Produtos extends Model {
 
         if($sql->rowCount() > 0) {
             return $this->info = $sql->fetchAll();
+        } else {
+            return false;
         }
         
     }

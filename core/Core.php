@@ -20,7 +20,7 @@ class Core {
             $url = explode('/', $url);
             array_shift($url);
             //Definindo qual o controller que será acessado;
-            $currentController = $url[0].'Controller';
+            $currentController = ucfirst($url[0]).'Controller';
             //Função que retira o primeiro elemento do array();
             array_shift($url);
 
@@ -41,7 +41,7 @@ class Core {
             $currentAction = 'index';
         }
 
-        if(!file_exists('../src/controllers/'.$currentController.'.php') ||!method_exists($currentController, $currentAction)) {
+        if(!file_exists('src/controllers/'.$currentController.'.php') ||!method_exists($currentController, $currentAction)) {
 
             $currentController = 'NotfoundController';
             $currentAction = 'index';
